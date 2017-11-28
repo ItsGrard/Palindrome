@@ -14,7 +14,7 @@ int main(){
     cout << "Insert number: " << endl;
     	cin >> num;
     	cout << "num1 " << num<< endl;
-  n = num;  //Cloning num so I can modify "n" // Wrong, cloning num so I can modify num and still have it in n.
+  n = num;  //Cloning num so I can modify "n" [UPDATE]-> Wrong, cloning num so I can modify num and still have it in n.
     	cout << "num "<< num <<endl;  //Just checking what compiler is doing and if its reading everything correctly
     	cout << " n is  " << n << endl << endl; //Checking
     	do {
@@ -26,7 +26,7 @@ int main(){
 		num = num/10;  //RIGHT!
 		cout << "digit   " << digit <<"  rev  " << rev <<" n:  " << n << " num" << num << endl;    //Checking as well	
 
-	}	// ERROR again (of course, must be num, not n as seen in: while (n !=0);
+	}	// ERROR again (of course, must be num, not n as seen in: while (n !=0), as I had written before;
     	while (num !=0); //RIGHT!
     	
     	if (n == rev) // That is right, but what I had (num == rev) was wrong
