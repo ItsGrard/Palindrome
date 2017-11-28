@@ -29,7 +29,7 @@ int main(){
 	}	// ERROR again (of course, must be num, not n as seen in: while (n !=0);
     	while (num !=0); //RIGHT!
     	
-    	if (num == rev)
+    	if (n == rev) // That is right, but what I had (num == rev) was wrong
 		cout << "is palindrome" << endl;
     	else 
     		cout << "is not" << endl;
